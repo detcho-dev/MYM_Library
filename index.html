@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MYM Library - Online book store">
+    <title>MYM Library</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <img src="logo.png" alt="Library Logo" class="logo">
+            <h1>MYM Library</h1>
+        </div>
+        <input type="text" id="search-bar" placeholder="Search for books..." onkeyup="searchBooks()">
+    </header>
+
+    <main>
+        <section id="book-list" class="book-list">
+            <!-- الكتب مكتوبة مباشرة هنا -->
+            <div class="book-item">
+                <img src="2text.jpg" alt="Cover of Du" class="book-cover">
+                <h3 class="book-title">Du</h3>
+                <p>Youssef Ahmed Fathi</p>
+                <div class="details">
+                    <p><strong>Price:</strong> 10.00 L.E.</p>
+                    <p><strong>Description:</strong> A novel set in the 1920s, exploring themes of decadence and the American Dream.</p>
+                </div>
+                <!-- eBook and Paper buttons -->
+                <div class="book-type-buttons">
+                    <a href="ebook.html" target="_blank"><button class="ebook-btn">E-Book</button></a>
+                    <a href="paper.html" target="_blank"><button class="paper-btn">Paper</button></a>
+                </div>
+             </div>
+              <!-- <div class="book-item">
+                <img src="another-book.jpg" alt="Cover of Another Book" class="book-cover">
+                <h3 class="book-title">Another Book</h3>
+                <p>Author Name</p>
+                <div class="details">
+                    <p><strong>Price:</strong> 15.00 L.E.</p>
+                    <p><strong>Description:</strong> A captivating tale of mystery and adventure.</p>
+                </div>
+               
+                <div class="book-type-buttons">
+                    <button class="ebook-btn">eBook</button>
+                    <button class="paper-btn">Paper</button>
+                </div>-->
+            </div>
+        </section>
+        <div id="no-results-message" class="no-results-message" style="display: none;">
+            No books found matching your search.
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 MYM Library. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
