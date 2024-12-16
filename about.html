@@ -1,34 +1,49 @@
-<div class="about-us">
-  <div class="letter">
-    <h1>M</h1>
-    <p>Mohammed</p>
-  </div>
-  <div class="letter">
-    <h1>Y</h1>
-    <p>Youssef</p>
-  </div>
-  <div class="letter">
-    <h1>M</h1>
-    <p>Moaz</p>
-  </div>
-</div>
-<style>
-  .about-us {
-  display: flex;
-  flex-direction: column; /* خلي العناصر تتوزع عمودي */
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  font-family: Arial, sans-serif;
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - MYM</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+  <style>
+    /* استايل المكتبة */
+body {
+  background-color: #f0f0f0; /* لون خلفية هادئ */
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-.letter {
-  margin: 20px 0;
+header {
+  background-color: #003366; /* لون هادئ للجزء العلوي */
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header .logo h1 {
+  margin: 0;
+  font-size: 36px;
+}
+
+.about-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+
+.column {
+  display: flex;
+  flex-direction: column; /* لتوزيع العناصر عمودياً */
+  align-items: center;
+  margin: 0 50px;
 }
 
 .letter h1 {
-  font-size: 80px;
-  color: #333;
+  font-size: 100px;
+  color: #003366; /* نفس اللون مثل الهيدر */
   margin: 0;
 }
 
@@ -38,4 +53,52 @@
   margin-top: 10px;
 }
 
-</style>
+footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+  </style>
+<body>
+  <!-- الهيدر -->
+  <header>
+    <div class="logo">
+      <h1>مكتبة MYM</h1>
+    </div>
+  </header>
+
+  <!-- قسم About Us -->
+  <div class="about-us">
+    <div class="column">
+      <div class="letter">
+        <h1>M</h1>
+        <p>Mohammed</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="letter">
+        <h1>Y</h1>
+        <p>Youssef</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="letter">
+        <h1>M</h1>
+        <p>Moaz</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- الفوتر -->
+  <footer>
+    <p>&copy; 2024 مكتبة MYM. جميع الحقوق محفوظة.</p>
+    <p>تم تطوير الموقع بواسطة فريق MYM</p>
+  </footer>
+</body>
+</html>
