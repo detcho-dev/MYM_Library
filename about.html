@@ -9,145 +9,125 @@
 
 <style>
   /* Library Style */
-body {
-  background-color: #f4f4f4; /* Light background color */
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-}
+  body {
+    background-color: #f4f4f4; /* Light background color */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
 
-/* Header */
-header {
-  background-color: #007bff;
-  color: white;
-  padding: 15px 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 10;
-}
+  /* Header */
+  header {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+  }
 
-header .header-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
+  header .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 
-nav ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-}
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
 
-nav ul li {
-  margin: 0 15px;
-}
+  nav ul li {
+    margin: 0 15px;
+  }
 
-.search-container input {
-  padding: 8px;
-  font-size: 16px;
-  border-radius: 5px;
-  border: none;
-}
+  /* Search bar on the right */
+  .search-container {
+    margin-left: auto;
+  }
 
-.about-us {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 60vh;
-  margin-top: 100px;
-}
+  .search-container input {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+  }
 
-.column {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 50px;
-}
+  /* About Us Section */
+  .about-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    margin-top: 100px;
+  }
 
-.letter h1 {
-  font-size: 100px;
-  color: #007bff;
-  margin: 0;
-  transition: all 0.3s ease;
-}
+  .column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 50px;
+  }
 
-.letter p {
-  font-size: 20px;
-  color: #555;
-  margin-top: 10px;
-}
+  .letter h1 {
+    font-size: 100px;
+    color: #007bff;
+    margin: 0;
+    transition: all 0.3s ease;
+  }
 
-.shrink {
-  font-size: 50px;
-  text-align: center;
-}
+  .letter p {
+    font-size: 20px;
+    color: #555;
+    margin-top: 10px;
+  }
 
-.shrink p {
-  font-size: 18px;
-  margin-top: 10px;
-}
+  .shrink {
+    font-size: 50px;
+    text-align: center;
+  }
 
-/* About Us Section */
-.about-us {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 60vh;
-}
+  .shrink p {
+    font-size: 18px;
+    margin-top: 10px;
+  }
 
-.column {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 50px;
-}
+  /* Footer */
+  footer {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
 
-.letter h1 {
-  font-size: 100px;
-  color: #007bff; /* Same color as the header */
-  margin: 0;
-}
-
-.letter p {
-  font-size: 20px;
-  color: #555;
-  margin-top: 10px;
-}
-
-/* Footer */
-footer {
-  background-color: #007bff;
-  color: white;
-  text-align: center;
-  padding: 20px 0;
-}
-
-footer .footer-content p {
-  margin: 0;
-}
-
+  footer .footer-content p {
+    margin: 0;
+  }
 </style>
+
 <body>
   <!-- Header -->
- <header class="header">
-        <div class="logo-container">
-            <img src="logo.png" alt="Library Logo" class="logo">
-            <h1>MYM Library</h1>
-        </div>
-        <input type="text" id="search-bar" placeholder="Search for books..." onkeyup="searchBooks()">
-    
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About Us</a></li>
-        </ul>
-      </nav>
-   </header>
+  <header class="header">
+    <div class="logo-container">
+      <img src="logo.png" alt="Library Logo" class="logo">
+      <h1>MYM Library</h1>
+    </div>
+    <div class="search-container">
+      <input type="text" id="search-bar" placeholder="Search for books..." onkeyup="searchBooks()">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <!-- About Us Section -->
   <div class="about-us">
@@ -173,30 +153,30 @@ footer .footer-content p {
 
   <!-- Footer -->
   <footer class="footer">
-        <p>&copy; 2024 MYM Library. All Rights Reserved.</p>
-    </footer>
-</body>
+    <p>&copy; 2024 MYM Library. All Rights Reserved.</p>
+  </footer>
+
   <script>
     window.addEventListener('scroll', function() {
-  const letters = document.querySelectorAll('.letter h1');
-  const info = document.querySelectorAll('.letter p');
+      const letters = document.querySelectorAll('.letter h1');
+      const info = document.querySelectorAll('.letter p');
 
-  if (window.scrollY > 100) {
-    letters.forEach(letter => {
-      letter.classList.add('shrink');
+      if (window.scrollY > 100) {
+        letters.forEach(letter => {
+          letter.classList.add('shrink');
+        });
+        info.forEach(inf => {
+          inf.classList.add('shrink');
+        });
+      } else {
+        letters.forEach(letter => {
+          letter.classList.remove('shrink');
+        });
+        info.forEach(inf => {
+          inf.classList.remove('shrink');
+        });
+      }
     });
-    info.forEach(inf => {
-      inf.classList.add('shrink');
-    });
-  } else {
-    letters.forEach(letter => {
-      letter.classList.remove('shrink');
-    });
-    info.forEach(inf => {
-      inf.classList.remove('shrink');
-    });
-  }
-});
-
   </script>
+</body>
 </html>
