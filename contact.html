@@ -125,17 +125,25 @@ footer {
     font-weight: bold;
     width: 200px;  /* تحديد عرض الزرار */
     text-align: center;  /* لتوسيط النص داخل الزرار */
+    transition: all 0.3s ease; /* إضافة الأنيميشن */
 }
 
 .whatsapp-button:hover {
     background-color: #128C7E; /* تغيير اللون عند التمرير */
+    transform: scale(1.1); /* تكبير الزرار عند التمرير */
 }
 
 .whatsapp-icon {
     width: 20px; /* حجم الأيقونة */
     height: 20px;
     margin-right: 10px; /* المسافة بين الأيقونة والنص */
+    transition: transform 0.3s ease; /* إضافة أنيميشن للأيقونة */
 }
+
+.whatsapp-button:hover .whatsapp-icon {
+    transform: rotate(360deg); /* جعل الأيقونة تدور عند التمرير */
+}
+
 
     </style>
 </head>
