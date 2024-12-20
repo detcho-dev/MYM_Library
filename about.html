@@ -18,52 +18,75 @@
   }
 
   /* Header */
- .header {
+  header {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+  }
+
+  header .header-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
-}
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 
-.header .logo-container {
+  .logo-container {
     display: flex;
     align-items: center;
-}
+  }
 
-.logo {
-    width: 40px;
-    height: auto;
-    margin-right: 10px;
-}
+  .logo-container h1 {
+    margin-left: 10px;
+  }
 
-.nav-menu ul {
-    list-style: none;
+  nav {
+    flex: 1;
     display: flex;
-    gap: 15px;
-    margin: 0;
-    padding: 0;
-}
+    justify-content: center;
+  }
 
-.nav-menu a {
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  nav ul li {
+    margin: 0 15px;
+  }
+
+  nav ul li a {
     text-decoration: none;
     color: white;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
 
-.nav-menu a:hover {
-    color: #ffcc00;
-}
+  nav ul li a:hover {
+    background-color: #0056b3;
+  }
 
-#search-bar {
+  .search-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .search-container input {
     padding: 8px;
-    border: none;
-    border-radius: 4px;
     font-size: 16px;
-    width: 250px;
-}
+    border-radius: 5px;
+    border: none;
+  }
 
   /* About Us Section */
   .about-us {
