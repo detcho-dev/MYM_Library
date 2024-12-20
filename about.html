@@ -30,7 +30,7 @@
 
   header .header-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 0 20px;
     max-width: 1200px;
@@ -63,7 +63,8 @@
 
   /* Search bar on the right */
   .search-container {
-    margin-left: auto;
+    position: absolute;
+    right: 20px;
   }
 
   .search-container input {
@@ -128,19 +129,21 @@
 <body>
   <!-- Header -->
   <header class="header">
-    <div class="logo-container">
-      <img src="logo.png" alt="Library Logo" class="logo">
-      <h1>MYM Library</h1>
+    <div class="header-content">
+      <div class="logo-container">
+        <img src="logo.png" alt="Library Logo" class="logo">
+        <h1>MYM Library</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </nav>
+      <div class="search-container">
+        <input type="text" id="search-bar" placeholder="Search for books..." onkeyup="searchBooks()">
+      </div>
     </div>
-    <div class="search-container">
-      <input type="text" id="search-bar" placeholder="Search for books..." onkeyup="searchBooks()">
-    </div>
-    <nav>
-      <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-      </ul>
-    </nav>
   </header>
 
   <!-- About Us Section -->
