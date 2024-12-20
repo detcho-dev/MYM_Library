@@ -47,7 +47,6 @@
   }
 
   nav {
-    flex: 1;
     display: flex;
     justify-content: center;
   }
@@ -144,17 +143,17 @@
   <!-- Header -->
   <header class="header">
     <div class="header-content">
-      <div class="logo-container">
+      <div class="logo-container" style="flex: 0 0 auto;">
         <img src="logo.png" alt="Library Logo" class="logo">
         <h1>MYM Library</h1>
       </div>
-      <nav>
+      <nav style="flex: 1; text-align: center;">
         <ul>
           <li><a href="">Home</a></li>
           <li><a href="about.html">About Us</a></li>
         </ul>
       </nav>
-      <div class="search-container">
+      <div class="search-container" style="flex: 0 0 auto;">
         <input type="text" id="search-bar" placeholder="Search for books..." onkeyup="searchBooks()">
       </div>
     </div>
