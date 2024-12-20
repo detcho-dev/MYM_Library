@@ -112,6 +112,31 @@ footer {
     bottom: 0;
 }
 
+        .whatsapp-button {
+    display: inline-flex;
+    justify-content: center;  /* لتوسيط المحتويات داخل الزرار */
+    align-items: center;      /* لضبط الصورة والنص عموديًا */
+    background-color: #25D366; /* اللون الأخضر الخاص بواتساب */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    width: 200px;  /* تحديد عرض الزرار */
+    text-align: center;  /* لتوسيط النص داخل الزرار */
+}
+
+.whatsapp-button:hover {
+    background-color: #128C7E; /* تغيير اللون عند التمرير */
+}
+
+.whatsapp-icon {
+    width: 20px; /* حجم الأيقونة */
+    height: 20px;
+    margin-right: 10px; /* المسافة بين الأيقونة والنص */
+}
+
     </style>
 </head>
 <body>
@@ -135,6 +160,11 @@ footer {
     <section id="contact-us">
         <div class="contact-content">
             <h2 style="color: #bfbfbf;">Contact Us</h2>
+            <a href="https://wa.me/your-phone-number" class="whatsapp-button">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon">
+    Chat on WhatsApp
+</a>
+
             <p>Or</p>
             
         </div>
